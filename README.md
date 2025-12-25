@@ -13,14 +13,22 @@
   <a href="#-live-demo">Live Demo</a> •
   <a href="#-installation">Installation</a> •
   <a href="#-screenshots">Screenshots</a> •
+  <a href="#-technologies">Technologies</a> •
   <a href="#-architecture">Architecture</a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/python-3.7+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.7+"/>
-  <img src="https://img.shields.io/badge/tkinter-GUI-FF6B6B?style=for-the-badge" alt="Tkinter"/>
-  <img src="https://img.shields.io/badge/license-MIT-00D9A5?style=for-the-badge" alt="MIT License"/>
-  <img src="https://img.shields.io/badge/dependencies-zero-E94560?style=for-the-badge" alt="Zero Dependencies"/>
+  <img src="https://img.shields.io/badge/Python-3.7+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.7+"/>
+  <img src="https://img.shields.io/badge/Tkinter-GUI-FF6B6B?style=for-the-badge" alt="Tkinter"/>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/License-MIT-00D9A5?style=for-the-badge" alt="MIT License"/>
+  <img src="https://img.shields.io/badge/Dependencies-Zero-E94560?style=for-the-badge" alt="Zero Dependencies"/>
+  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Mac%20%7C%20Linux-blue?style=for-the-badge" alt="Platform"/>
 </p>
 
 ---
@@ -89,7 +97,7 @@ Experience Password Vault Pro directly in your browser! No installation required
 
 ```bash
 # Clone the repository
-git clone https://github.com/tharun-ship-it/password-vault.git
+git clone https://github.com/tharun-ship-it/password-vault-pro.git
 cd password-vault
 
 # Run the application
@@ -121,25 +129,52 @@ Visual grid of 50+ services organized into 8 categories for quick addition.
 
 ---
 
+## 🛠 Technologies
+
+This project uses **two implementations** to showcase both desktop and web development skills:
+
+### Desktop Application (Python)
+| Technology | Purpose |
+|------------|---------|
+| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) | Core application logic |
+| ![Tkinter](https://img.shields.io/badge/Tkinter-FF6B6B?style=flat) | GUI framework |
+| `hashlib` | SHA-256 password hashing |
+| `json` | Data storage |
+| `pathlib` | Cross-platform file handling |
+
+### Live Demo (Web)
+| Technology | Purpose |
+|------------|---------|
+| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) | Page structure |
+| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) | Styling & animations |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) | Interactive functionality |
+
+### Why Two Implementations?
+
+- **Desktop App**: Demonstrates Python skills, OOP, GUI development, security best practices
+- **Web Demo**: Allows recruiters to try the app instantly without installation, showcases HTML/CSS/JS skills
+
+---
+
 ## 🏗 Architecture
 
 ```
-password-vault/
+password-vault-pro/
 ├── src/
-│   ├── __init__.py           # Package initialization
-│   └── vault.py              # Main application (700+ lines)
+│   ├── __init__.py           # Package initialization (Python)
+│   └── vault.py              # Main desktop app - 700+ lines (Python + Tkinter)
 ├── tests/
-│   └── test_vault.py         # Unit tests
+│   └── test_vault.py         # Unit tests (Python)
 ├── assets/
 │   └── screenshot.png        # App screenshot
-├── index.html                # Live demo (GitHub Pages)
+├── index.html                # Live web demo (HTML + CSS + JavaScript)
 ├── .github/
-│   └── workflows/ci.yml      # CI/CD pipeline
+│   └── workflows/ci.yml      # CI/CD pipeline (YAML)
 ├── requirements.txt          # Dependencies (none!)
-├── setup.py                  # Package config
+├── setup.py                  # Package config (Python)
 ├── pyproject.toml           # Modern Python config
 ├── LICENSE                   # MIT License
-└── README.md                 # This file
+└── README.md                 # Documentation (Markdown)
 ```
 
 ### Data Storage
@@ -155,9 +190,10 @@ password-vault/
 | Component | Implementation |
 |-----------|----------------|
 | Master Password | SHA-256 hash (never stored plain) |
-| Recovery Options | Email + custom hint |
-| Password Display | Masked with reveal option |
-| Storage | Local filesystem only |
+| Recovery Options | Email + Phone Number + Custom Hint |
+| Password Display | Masked with 👁 eye toggle to reveal |
+| Password Strength | Real-time meter (Weak → Excellent) |
+| Storage | Local filesystem only (offline) |
 
 ---
 
@@ -214,15 +250,24 @@ This project is licensed under the MIT License—see the [LICENSE](LICENSE) file
 
 ---
 
+## 👤 Author
+
+**Tharun Ponnam**
+
+* GitHub: [@tharun-ship-it](https://github.com/tharun-ship-it)
+* Email: tharunponnam007@gmail.com
+
+---
+
 <p align="center">
-  <strong>Built with ❤️ by <a href="https://github.com/tharun-ship-it">Tharun Ponnam</a></strong>
+  <a href="https://github.com/tharun-ship-it/password-vault-pro/stargazers">
+    <img src="https://img.shields.io/github/stars/tharun-ship-it/password-vault-pro?style=social" alt="Stars"/>
+  </a>
+  <a href="https://github.com/tharun-ship-it/password-vault-pro/network/members">
+    <img src="https://img.shields.io/github/forks/tharun-ship-it/password-vault-pro?style=social" alt="Forks"/>
+  </a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/tharun-ship-it/password-vault/stargazers">
-    <img src="https://img.shields.io/github/stars/tharun-ship-it/password-vault?style=social" alt="Stars"/>
-  </a>
-  <a href="https://github.com/tharun-ship-it/password-vault/network/members">
-    <img src="https://img.shields.io/github/forks/tharun-ship-it/password-vault?style=social" alt="Forks"/>
-  </a>
+  <strong>📅 July 2020</strong>
 </p>
