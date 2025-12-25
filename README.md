@@ -40,7 +40,7 @@ Password Vault Pro is a **secure, offline password manager** with a stunning dar
 Experience Password Vault Pro directly in your browser! No installation required.
 
 <p align="center">
-  <a href="https://tharun-ship-it.github.io/password-vault/">
+  <a href="https://tharun-ship-it.github.io/password-vault-pro/">
     <img src="https://img.shields.io/badge/▶_TRY_LIVE_DEMO-E94560?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo" height="50"/>
   </a>
 </p>
