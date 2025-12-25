@@ -259,15 +259,4 @@ This project is licensed under the MIT License—see the [LICENSE](LICENSE) file
 
 ---
 
-<p align="center">
-  <a href="https://github.com/tharun-ship-it/password-vault-pro/stargazers">
-    <img src="https://img.shields.io/github/stars/tharun-ship-it/password-vault-pro?style=social" alt="Stars"/>
-  </a>
-  <a href="https://github.com/tharun-ship-it/password-vault-pro/network/members">
-    <img src="https://img.shields.io/github/forks/tharun-ship-it/password-vault-pro?style=social" alt="Forks"/>
-  </a>
-</p>
-
-<p align="center">
-  <strong>📅 July 2020</strong>
-</p>
+**Created: July 2020**
