@@ -35,7 +35,7 @@
 
 ## 🎯 Overview
 
-Password Vault Pro is a **secure, offline password manager** with a stunning dark-themed interface. Built entirely with Python's standard library, it offers enterprise-level features like master password protection, password recovery options, smart service categorization, and password strength analysis—all without any external dependencies.
+Password Vault Pro is a **secure, offline password manager** with a stunning dark-themed interface. The desktop application is built with **Python and Tkinter**, while the interactive web demo uses **HTML5, CSS3, and JavaScript**. It offers enterprise-level features like master password protection, password recovery options, smart service categorization, and password strength analysis.
 
 <p align="center">
   <img src="assets/screenshot.png" alt="Password Vault Pro Screenshot" width="700"/>
@@ -259,4 +259,8 @@ This project is licensed under the MIT License—see the [LICENSE](LICENSE) file
 
 ---
 
-**Created: July 2020**
+**⭐ If you find this project useful, please consider giving it a star!**
+
+* [🔗 Live Demo](https://tharun-ship-it.github.io/password-vault-pro/)
+* [🐛 Report Bug](https://github.com/tharun-ship-it/password-vault-pro/issues)
+* [✨ Request Feature](https://github.com/tharun-ship-it/password-vault-pro/pulls)
