@@ -1,0 +1,12 @@
+# No external dependencies required
+# Built with Python standard library only
+#
+# tkinter - GUI framework (included with Python)
+# hashlib - Password hashing (standard library)
+# json - Data serialization (standard library)
+# pathlib - File path handling (standard library)
+#
+# Development dependencies (optional):
+# pytest>=7.0.0  # For running tests
+# black>=22.0.0  # Code formatting
+# mypy>=0.990    # Type checking

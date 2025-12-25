@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Vault Pro - Screenshot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .window {
+            width: 850px;
+            background: #0d0d1a;
+            border-radius: 12px;
+            box-shadow: 0 30px 100px rgba(0, 0, 0, 0.6);
+            overflow: hidden;
+        }
+
+        .header {
+            background: #16213e;
+            padding: 16px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .header-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .stored-badge {
+            background: #252545;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: #a0a0a0;
+        }
+
+        .lock-btn {
+            padding: 10px 20px;
+            background: #e94560;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-weight: 600;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .tabs {
+            display: flex;
+            padding: 0 20px;
+            gap: 5px;
+            background: #0d0d1a;
+            border-bottom: 1px solid #252545;
+        }
+
+        .tab {
+            padding: 14px 24px;
+            background: transparent;
+            border-radius: 8px 8px 0 0;
+            color: #a0a0a0;
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .tab.active {
+            background: #6366f1;
+            color: white;
+        }
+
+        .content {
+            padding: 20px;
+            background: #0d0d1a;
+        }
+
+        .search-bar {
+            background: #1f1f3d;
+            border-radius: 10px;
+            padding: 12px 18px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        .search-bar input {
+            flex: 1;
+            padding: 10px 14px;
+            background: #252545;
+            border: 2px solid #3a3a5a;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .table {
+            background: #1f1f3d;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .table-header {
+            display: grid;
+            grid-template-columns: 2fr 2.5fr 1.5fr 1fr;
+            padding: 14px 20px;
+            background: #16213e;
+            font-weight: 600;
+            font-size: 13px;
+            color: #fff;
+        }
+
+        .table-row {
+            display: grid;
+            grid-template-columns: 2fr 2.5fr 1.5fr 1fr;
+            padding: 16px 20px;
+            border-bottom: 1px solid #252545;
+            align-items: center;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .table-row.selected {
+            background: #6366f1;
+        }
+
+        .table-row:last-child {
+            border-bottom: none;
+        }
+
+        .category-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 12px;
+            background: #252545;
+            border-radius: 15px;
+            font-size: 12px;
+            color: #a0a0a0;
+        }
+
+        .action-bar {
+            background: #1f1f3d;
+            border-radius: 10px;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .action-btn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+
+        .btn-view {
+            background: #00b4d8;
+            color: white;
+        }
+
+        .btn-copy {
+            background: #6366f1;
+            color: white;
+        }
+
+        .btn-delete {
+            background: #e94560;
+            color: white;
+        }
+
+        .btn-clear {
+            background: #ffc107;
+            color: #0d0d1a;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            color: #a0a0a0;
+            font-size: 12px;
+            background: #0d0d1a;
+        }
+
+        .footer a {
+            color: #e94560;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="window">
+        <div class="header">
+            <div class="header-left">
+                <div class="header-title">🔐 Password Vault Pro</div>
+                <span class="stored-badge">📦 3 passwords stored</span>
+            </div>
+            <button class="lock-btn">🔒 Lock Vault</button>
+        </div>
+
+        <div class="tabs">
+            <div class="tab">➕ Add Password</div>
+            <div class="tab active">📋 My Passwords</div>
+            <div class="tab">📁 Categories</div>
+            <div class="tab">🎲 Generator</div>
+        </div>
+
+        <div class="content">
+            <div class="search-bar">
+                <span style="font-size: 18px;">🔍</span>
+                <input type="text" placeholder="Search passwords...">
+            </div>
+
+            <div class="table">
+                <div class="table-header">
+                    <span>Service</span>
+                    <span>Email/Username</span>
+                    <span>Category</span>
+                    <span>Added</span>
+                </div>
+                <div class="table-row selected">
+                    <span>Instagram</span>
+                    <span>tharunponnam007@gmail.com</span>
+                    <span class="category-tag">📱 Social Media</span>
+                    <span>2025-12-25</span>
+                </div>
+                <div class="table-row">
+                    <span>GitHub</span>
+                    <span>tharunponnam007@gmail.com</span>
+                    <span class="category-tag">💻 Development</span>
+                    <span>2025-12-25</span>
+                </div>
+                <div class="table-row">
+                    <span>Netflix</span>
+                    <span>tharun.streaming@gmail.com</span>
+                    <span class="category-tag">🎬 Streaming</span>
+                    <span>2025-12-24</span>
+                </div>
+            </div>
+
+            <div class="action-bar">
+                <div class="action-buttons">
+                    <button class="action-btn btn-view">👁 View Password</button>
+                    <button class="action-btn btn-copy">📋 Copy</button>
+                    <button class="action-btn btn-delete">🗑 Delete Password</button>
+                </div>
+                <button class="action-btn btn-clear">⚠️ Clear All</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            Built with ❤️ by <a href="#">Tharun Ponnam</a> | <a href="#">⭐ Star on GitHub</a>
+        </div>
+    </div>
+</body>
+</html>
